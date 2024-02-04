@@ -1,71 +1,70 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root{
-  --text-color:white;
-  --bg-url:url(./assets/bg-mobile.jpg);
-  --stroke-color:rgba(255, 255, 255, 0.5);
-  --surface-color:rgba(255, 255, 255, 0.1);
-  --surface-color-hover:rgba(0, 0, 0, 0.02);
-  --highlight-color:rgba(255, 255, 255, 0.2);
-  --switch-bg-url:url(./assets/moon-star.svg);
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/moon-star.svg);
 }
 
-.light{
-  --text-color:black;
-  --bg-url:url(./assets/bg-mobile-light.jpg);
-  --stroke-color:rgba(0, 0, 0, 0.5);
-  --surface-color:rgba(0, 0, 0, 0.05);
-  --surface-color-hover:rgba(0, 0, 0, 0.02);
-  --highlight-color:rgba(0, 0, 0, 0.1);
-  --switch-bg-url:url(./assets/sun.svg);
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/sun.svg);
 }
-body{
+body {
   /*
 
   Tudo pode ser feito em uma linha de codigo só, bastando usar somente o background, no caso do size te que se colocar uma barra(/) para poder dar certo.
   */
-  background: var(--bg-url) no-repeat top center/cover ;
+  background: var(--bg-url) no-repeat top center/cover;
 }
 
-body *{
+body * {
   font-family: "Inter", sans-serif;
   color: var(--text-color);
-  
 }
 
-#container{
-  width: 360px;
+#container {
+  width: 100%;
+  max-width: 500px;
   margin: 56px auto 0px;
   padding: 0px 24px;
-
 }
 /* profile*/
 #profile img {
   width: 112px;
 }
 
-#profile{
-  text-align: center  ;
+#profile {
+  text-align: center;
   padding: 24px;
 }
 
-#profile p{
+#profile p {
   font-weight: 500;
   line-height: 24px;
   margin-top: 8px;
 }
 
 /* switch */
-#switch{
+#switch {
   position: relative;
   width: 64px;
   margin: 4px auto;
 }
-#switch button{
+#switch button {
   width: 32px;
   height: 32px;
   background: white var(--switch-bg-url) no-repeat center;
@@ -79,32 +78,32 @@ body *{
   transform: translateY(-50%);
 }
 
-.light #switch button{
+.light #switch button {
   right: 0;
   left: initial;
 }
 
-#switch span{
+#switch span {
   display: block;
   width: 64px;
   height: 24px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter:blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
 }
 /*Links*/
 
-ul{
+ul {
   list-style: none;
-  display: 	flex;
+  display: flex;
   flex-direction: column;
   gap: 16px;
 
   padding: 24px 0;
 }
-ul li a{
+ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,15 +118,15 @@ ul li a{
   font-weight: 500;
 
   transition: background 0.2s;
-} 
-
-/*Como o mouse se comporta nos links*/
-ul li a:hover{
-    background: var(--surface-color-hover);
-    border: 1.5px solid var(--text-color);
 }
 
-#social-icons{
+/*Como o mouse se comporta nos links*/
+ul li a:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+
+#social-icons {
   display: flex;
   justify-content: center;
 
@@ -135,22 +134,20 @@ ul li a:hover{
   font-size: 24px;
 }
 
-
-#social-icons a{
+#social-icons a {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px;
-  
+
   transition: background 0.2s;
   border-radius: 50%;
-
 }
 #social-icons a:hover {
   background: var(--highlight-color);
 }
 
-footer{
+footer {
   text-align: center;
   padding: 24px;
 }
